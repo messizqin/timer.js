@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="timer.css" />
+</head>
+<body>
+
+
+<script src="timer.js"></script>
+<script type="text/javascript">
+let timer = new Timer(
+	700, 
+	250, 
+	20, 
+);
+document.body.appendChild(timer.el);
+setTimeout(()=>{
+	timer.collapse(timer.hour_el);
+}, 500);
+</script>
+</body>
+</html>
